@@ -59,7 +59,7 @@ Token-based session management includes JWT, OAuth, SAML, and API keys. Of these
 
 | # | Description | L1 | L2 | L3 | CWE | [NIST &sect;](https://pages.nist.gov/800-63-3/sp800-63b.html) |
 | :---: | :--- | :---: | :---:| :---: | :---: | :---: |
-| **3.5.1** | Verify the application allows users to revoke OAuth tokens that form trust relationships with linked applications.  |  | ✓ | ✓ | 290 | 7.1.2 |
+| **3.5.1** | ~~Verify the application allows users to revoke OAuth tokens that form trust relationships with linked applications.~~  |  | ✓ | ✓ | 290 | 7.1.2 |
 | **3.5.2** | Verify the application uses session tokens rather than static API secrets and keys, except with legacy implementations. |  | ✓ | ✓ | 798 | |
 | **3.5.3** | Verify that stateless session tokens use digital signatures, encryption, and other countermeasures to protect against tampering, enveloping, replay, null cipher, and key substitution attacks. |  | ✓ | ✓ | 345 | |
 
@@ -69,8 +69,8 @@ This section relates to those writing Relying Party (RP) or Credential Service P
 
 | # | Description | L1 | L2 | L3 | CWE | [NIST &sect;](https://pages.nist.gov/800-63-3/sp800-63b.html) |
 | :---: | :--- | :---: | :---:| :---: | :---: | :---: |
-| **3.6.1** | Verify that relying parties specify the maximum authentication time to Credential Service Providers (CSPs) and that CSPs re-authenticate the subscriber if they haven't used a session within that period. | | | ✓ | 613 | 7.2.1 |
-| **3.6.2** | Verify that Credential Service Providers (CSPs) inform Relying Parties (RPs) of the last authentication event, to allow RPs to determine if they need to re-authenticate the user. | | | ✓ | 613| 7.2.1 |
+| **3.6.1** | ~~Verify that relying parties specify the maximum authentication time to Credential Service Providers (CSPs) and that CSPs re-authenticate the subscriber if they haven't used a session within that period.~~ | | | ✓ | 613 | 7.2.1 |
+| **3.6.2** | ~~Verify that Credential Service Providers (CSPs) inform Relying Parties (RPs) of the last authentication event, to allow RPs to determine if they need to re-authenticate the user.~~ | | | ✓ | 613| 7.2.1 |
 
 ## V3.7 Defenses Against Session Management Exploits
 
